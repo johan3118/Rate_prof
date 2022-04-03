@@ -1,14 +1,12 @@
 import './App.css';
+import { app } from './Firebase';
+import AddTeacher from "./AddTeacher";
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Hola Como estas</h1>
-      <h2>test</h2>
-      <h3>Prueba</h3>
-      <p>ttsksthskthksthkshkshtkhtkshtkhstkhskthkthskth</p>
-    </div>
+    <AddTeacher firebase={app}/>
   );
 }
 
 export default App;
+
