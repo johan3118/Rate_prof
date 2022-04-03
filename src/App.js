@@ -4,7 +4,9 @@ import AddTeacher from "./AddTeacher";
 
 function App() {
   return (
-    <AddTeacher firebase={app}/>
+      <h1>
+        Hola Johan
+      </h1>
   );
 }
 

@@ -6,7 +6,7 @@ import Perfil_profesor from './Perfil_profesor';
 
 ReactDOM.render(
   <React.StrictMode>
-      
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
