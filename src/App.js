@@ -1,6 +1,6 @@
 import './App.css';
-import { app } from './Firebase';
-import AddTeacher from "./AddTeacher";
+import { app } from './Firebase.js';
+import AddTeacher from "./AddTeacher.js";
 
 function App() {
   return (
