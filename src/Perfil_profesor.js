@@ -2,7 +2,8 @@ import './Perfil_profesor.css';
 import Logo from './Logo.PNG';
 import Perfil from './perfilF.PNG';
 
-function Perfil_profesor(){
+export function Perfil_profesor(){
+
     return (
         <div className="perfil_profesor">
             <header className='perfil_appbar'>
@@ -40,5 +41,3 @@ function Perfil_profesor(){
     );
 }
 
-
-export default Perfil_profesor;

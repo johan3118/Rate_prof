@@ -1,5 +1,6 @@
 import React, {useRef, useState} from "react";
 import { useAuth } from "./AuthContext";
+import './Signup.css';
 
 export default function Signup(){
 
@@ -33,11 +34,11 @@ export default function Signup(){
         <div >
          {error && <h1>error</h1>}   
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: "column" ,justifyContent: 'center', alignItems: 'center', height: '100vh', fontSize: '1.5rem'}}>
-            <label>Email: </label>
+            <label >Correo Institucional: </label>
             <input type="text" name='email' ref={emailRef}></input>
-            <label>Password: </label>
+            <label>Contraseña: </label>
             <input type="password" name='password' ref={passwordRef}></input>
-            <label>Confirm password: </label>
+            <label>Confirmar contraseña: </label>
             <input type="password" name='password' ref={passwordConfirmRef}></input>
             <button disabled={loading} type="submit">sign up</button>
         </form>

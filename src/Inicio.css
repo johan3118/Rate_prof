@@ -1,0 +1,141 @@
+.App {
+    text-align: center;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monserrat, sans-serif;
+  }
+  
+  h1{
+    font-size: 100px;
+    display: flex;
+  }
+  
+  input, button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .App {
+    background-color:  whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .background{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
+  
+  .title{
+    position: absolute;
+    bottom: 0.5em;
+  }
+  
+  .title-search{  
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .search{
+    position: fixed;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    top: 30vh;
+    width: 50%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #54368f;
+    margin: 10em;
+    align-items: center;
+  }
+  
+  
+  .inputP{
+    display: flex;
+    width: 100%;
+  }
+  
+  .input-search{
+    width: 100%;
+  }
+  
+  
+  h1 span{
+    font-family: comic sans ms, sans-serif;
+  }
+  
+  h1 span:nth-child(4){
+    color: #ea543b;
+  }
+  h1 span:nth-child(3){
+    color: #ed58a4;
+  }
+  h1 span:nth-child(5){
+    color: #54368f;
+  }
+  h1 span:nth-child(1){
+    color: #646caa;
+  }
+  h1 span:nth-child(20){
+    color: #97d7c6;
+  }
+  h1 span:nth-child(15){
+    color: #ea543b;
+  }
+  h1 span:nth-child(13){
+    color: #ed58a4;
+  }
+  h1 span:nth-child(7){
+    color: #54368f;
+  }
+  h1 span:nth-child(18){
+    color: #646caa;
+  }
+  h1 span:nth-child(10){
+    color: #97d7c6;
+  }
+  h1 span:nth-child(11){
+    color: #ea543b;
+  }
+  h1 span:nth-child(12){
+    color: #ed58a4;
+  }
+  h1 span:nth-child(13){
+    color: #54368f;
+  }
+  h1 span:nth-child(9){
+    color: #646caa;
+  }
+  h1 span:nth-child(6){
+    color: #97d7c6;
+  }
+  h1 span:nth-child(8){
+    color: #ed58a4;
+  }
+  h1 span:nth-child(17){
+    color: #54368f;
+  }
+  h1 span:nth-child(19){
+    color: #646caa;
+  }
+  h1 span:nth-child(16){
+    color: #ed58a4;
+  }
+  h1 span:nth-child(2){
+    color: #ed58a4;
+  }
