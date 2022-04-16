@@ -2,8 +2,7 @@ export const listaProfesoresArea = [
   {
     area: 'CIENCIAS BÁSICAS Y AMBIENTALES',
     profesores: [
-      
-      
+
       'ANGNERYS GRACIELA TORREALBA ESPINOZA',
       'ARLEN MARMOLEJO HERNÁNDEZ',
       'BOANERGES DOMINGUEZ RUIZ',
