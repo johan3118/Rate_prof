@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 function Add_teacher({firebase}) {
     const db = getDatabase(firebase)
     const [state, setState] = useState({
-        nombre: "",
+        nombres: "",
         area: ""
     })
     function handleChange(e){
@@ -16,14 +16,14 @@ function Add_teacher({firebase}) {
     function handleSubmit(e){
       e.preventDefault()
       /// send to firebase //uuid
-      const { nombre, area } = state
+      const { nombres, area } = state
       const profesorId = uuidv4()
       
       // set send data to firebase
       // ref set id
-      set(ref(db, 'profesores/' + profesorId), {nombre, area});
+      set(ref(db, 'profesores/' + profesorId), {nombres, area});
 
-      setState({ nombre: '', area: '' })
+      setState({ nombres: '', area: '' })
 
     }
 
@@ -31,7 +31,7 @@ function Add_teacher({firebase}) {
       <div >
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: "column" ,justifyContent: 'center', alignItems: 'center', height: '100vh', fontSize: '1.5rem'}}>
             <label>Nombre: </label>
-            <input type="text" name='nombre' value={state.nombre} onChange={handleChange}></input>
+            <input type="text" name='nombres' value={state.nombres} onChange={handleChange}></input>
             <label>area: </label>
             <input type="text" name='area' value={state.area} onChange={handleChange}></input>
             <button type="submit">Agregar</button>

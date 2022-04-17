@@ -1,26 +1,21 @@
 // Import the functions you need from the SDKs you need
 import firebase from 'firebase/compat/app'
-import 'firebase/compat/auth';
-
+import 'firebase/compat/auth'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const app = firebase.initializeApp({
-  apiKey: "AIzaSyBfxju-IZgW8tpPRssI5ihcPHhxNqZKj3g",
-  authDomain: "rate-prof-ccc3c.firebaseapp.com",
-  databaseURL: "https://rate-prof-ccc3c-default-rtdb.firebaseio.com",
-  projectId: "rate-prof-ccc3c",
-  storageBucket: "rate-prof-ccc3c.appspot.com",
-  messagingSenderId: "778523135010",
-  appId: "1:778523135010:web:e9e49e0f93b97ef3158e7b"
-}) 
+  apiKey: "AIzaSyDCQUcGUfDJiEtJqPFUgFFJV7ruRSiaCcI",
+  authDomain: "rate-profesores.firebaseapp.com",
+  projectId: "rate-profesores",
+  storageBucket: "rate-profesores.appspot.com",
+  messagingSenderId: "919208332903",
+  appId: "1:919208332903:web:58a43b051483270c600ec2",
+  measurementId: "G-ZFJVZBCL2K"
+});
 
+// Initialize Firebase
 export const auth = firebase.auth()
-export const db = firebase.firestore()
-export const storage = firebase.storage()
 export default app
-
-
-
-
