@@ -91,7 +91,7 @@
     background-color: #f3f3f3;
     box-shadow: 3px 3px 3px lightblue;
     border-radius: 5px;
-    width: 120vh;
+    width: 90%;
     flex-direction: column;
     margin: 2vh;
     margin-left: 0;
@@ -120,6 +120,7 @@
 }
 
 .comentario-visto {
+    height: 15vh;
     max-height: 15vh;
     max-width: 100%;
     margin: 2vh;
@@ -129,5 +130,5 @@
     font-size: x-large;
     padding: 1vh;
     overflow: auto;
-
+    overflow-wrap: break-word;
 }
