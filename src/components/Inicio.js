@@ -4,7 +4,7 @@ import InicioImg from '../assets/inicio.PNG';
 import { Buscador } from './Buscador.js';
 import { useEffect, useState } from 'react';
 import app from '../Firebase.js';
-import { getDatabase, ref, child, get } from "firebase/database";
+import { getDatabase, ref, onValue } from "firebase/database";
 import { Link } from 'react-router-dom'
 
 
@@ -12,18 +12,21 @@ function Inicio({ user, signout }) {
     const [profesores, setProfesores] = useState({});
 
     useEffect(() => {
-        const dbRef = ref(getDatabase(app));
-        get(child(dbRef, 'profesores')).then((snapshot) => {
-            if (snapshot.exists()) {
-                setProfesores(snapshot.val())
+        const dbRef = ref(getDatabase(app), 'profesores');
 
+        const unsubscribe = onValue(dbRef, (snapshot) => {
+            if (snapshot.exists()) {
+                setProfesores(snapshot.val());
             } else {
                 console.log("No data available");
             }
-        }).catch((error) => {
-            console.error(error);
+        }, (error) => {
+            console.error("Este es:", error);
         });
-    }, [])
+
+        // Clean up function
+        return () => unsubscribe();
+    }, []);
 
     const renderLinks = () => {
         if (!user) {

@@ -12,7 +12,7 @@ export function Buscador({ placeholder, profesores }) {
     function listaProfesores() {
         if (buscador.length) {
             return Object.keys(profesores).map((profesor, i) => {
-                if (profesores[profesor].nombre?.toLowerCase().includes(buscador)) {
+                if (profesores[profesor].nombre?.toLowerCase().includes(buscador.toLowerCase())) {
                     return (
                         <span key={i}>
                             <Link to={`/Rate_prof/profesores/${profesor}`} className="resultado-profesor">
